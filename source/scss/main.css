@@ -227,6 +227,9 @@
   font-size: 20px;
   padding-right: 7px;
 }
+.moving_info .text {
+  font-size: 16px;
+}
 .moving_info .map {
   margin-top: 15px;
 }
