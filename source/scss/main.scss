@@ -1,1 +1,219 @@
-@import './maket_place';
+
+.card-header{
+    font-weight: 500;
+}
+
+.maket-place{
+    &__content{
+        .col-12{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &:not(:last-child){
+                border-right: 1px solid #ddd;
+                @media(max-width: 767px){
+                    border-right: none;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+        }
+        .card-header{
+            border-bottom: none;
+            padding-top: 25px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .icon{
+            font-size: 25px;
+            padding-right: 5px;
+        }
+        .item-1{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            .child{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .text{
+                
+            }
+            .number{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .item-2{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            .child{
+                display: flex;
+                align-items: center;
+                display: flex;
+                &:not(:last-child){
+                    margin-bottom:8px;
+                }
+            }
+            
+            .text{}
+        }
+        .item-3{
+            padding-left: 10%;
+            width: auto;
+            @media(max-width:767px){
+                padding: 0;
+            }
+            .text{
+                font-weight: bold;
+                color: #000;
+            }
+            .normal{
+                font-weight: normal;
+                font-style: normal;;
+            }
+            .child{
+                display: flex;
+                align-items: center;
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+                &:last-child{
+                    text-align: center;
+                }
+            }
+        }
+        .item-4{
+            .child{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                &:last-child{
+                    text-align: center;
+                    .btn{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .text{
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .item-4{
+
+            }
+        }
+    }
+    
+}
+
+.rom_listing{
+    .item{
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 1px solid #dee0e1 !important;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding: 12px 15px;
+        &:hover{
+            background-color: rgba(57,81,155,.06);
+        }
+    }
+    .icon{
+        font-size: 25px;
+        // padding-right: 15px;
+        color: #495057;
+
+        width: 35px;
+        height: 35px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        background-color: rgba(57,80,155,.05);
+        margin-right: 15px;
+        color: #25628F;
+        font-size: 19px;
+        text-align: center;
+        line-height: 36px;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        font-size: 18px;
+        
+        font-weight: 500;
+        font-weight: bold;
+    }
+    .option{
+        font-size: 14px;
+    }
+    .arrow{
+        margin-left: auto;
+        font-size: 25px;
+        color: #25628F;
+    }
+    .link{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        
+    }
+    .card-block{
+        overflow-y: auto;
+    }
+}
+
+.moving_info{
+    .card-block{
+        padding: 16px 20px !important;
+    }
+    .item{
+        margin-bottom: 15px;
+    }
+    .child{
+        display: flex;
+        align-items: center;
+    }
+    .icon{
+        font-size: 20px;
+        padding-right: 7px;
+    }
+    .text{}
+    .map{
+        margin-top: 15px;
+    }
+}
+
+.notes-comments{
+    &.ks-comments-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ks-comment{
+        padding: 20px 15px;
+        margin-bottom: 0;
+        background-color: #eff1f7;
+        &:first-child{
+            margin-bottom: 30px;
+        }
+        // &:not(:last-child),&:not(:first-child){
+        //     padding-bottom: 0;
+        // }
+    }
+}
