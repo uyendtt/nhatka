@@ -139,7 +139,7 @@
         <div class="ks-column ks-page">
             <div class="ks-page-header">
                 <section class="ks-title">
-                    <h3>Market Place</h3>
+                    <h3>Market place / Bidding board / Bidding detail</h3>
                     <div class="ks-controls"> <button type="button"
                             class="btn btn-outline-primary ks-light ks-profile-tabs-block-toggle"
                             data-block-toggle=".ks-tabs-container">Tabs</button> </div>
@@ -148,290 +148,286 @@
             <div class="ks-page-content">
                 <div class="ks-page-content-body ks-profile">
                     <div class="ks-tabs-container ks-tabs-default ks-tabs-no-separator ks-full ks-light">
-                        <ul class="nav nav-tabs ks-nav-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#home">
-                                    Bidding Board
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#profile">
-                                    Offered Quotes
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content container-fluid">
-                            <div class="tab-pane show active" id="home">
-                                <div class="maket-place__content">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Thanh's Apartment
+                        <div class="bidding-detail">
+                            <div class="left">
+                                <div class="bidding-detail__info">
+                                    <div class="name">
+                                        Andy’s apartment
+                                        <span class="date">22 days 12:22:23</span>
+                                    </div>
+                                    <div class="avatar">
+                                        <figure class="img">
+                                            <img src="https://via.placeholder.com/150" alt="">
+                                        </figure>
+                                       <div class="detail">
+                                            <div class="detail-name">Andy Miller</div>
+                                            <div class="addr">
+                                                <i class="addr-icon">ic</i>
+                                                <div class="addr-name">243-121-6534</div>
+                                            </div>
+                                            <div class="addr">
+                                                <i class="addr-icon">ic</i>
+                                                <div class="addr-name">andy_mi@gmail.com</div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="bidding-detail__address">
+                                    <div class="heading">Moving Information</div>
+                                    <div class="address">
+                                        <div class="address__item">
+                                            243 Beach Road Allentown, PA 18102
                                         </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-1">
-                                                        <div class="child">
-                                                            <span class="number">4</span>
-                                                            <span class="text">Rooms</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="number">10.000</span>
-                                                            <span class="text">Libs</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="number">250</span>
-                                                            <span class="text">Items</span>
-                                                        </div>
-                                                    </div>
+                                        <div class="address__item">
+                                            243 Beach Road Allentown, PA 18102
+                                        </div>
+                                    </div>
+                                    <div class="map">
+                                        <img src="https://via.placeholder.com/370x250" alt="">
+                                    </div>
+                                    <div class="schedule">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="schedule__item">
+                                                    <span class="schedule__label">
+                                                        Moving date
+                                                    </span>
+                                                    <span class="schedule__value">
+                                                        11/15/2020
+                                                    </span>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-2">
-                                                        <div class="child">
-                                                            <span class="icon la la-map-marker"></span>
-                                                            <span class="text">119 Pasteur, P6,Quan 3</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-map-marker"></span>
-                                                            <span class="text">119 Pasteur, P6,Quan 3</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-calendar"></span>
-                                                            <span class="text">28/05/2020</span>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="schedule__item">
+                                                    <span class="schedule__label">
+                                                        No. of offers
+                                                    </span>
+                                                    <span class="schedule__value">
+                                                        3
+                                                    </span>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-3">
-                                                        <div class="child">
-                                                            <span class="icon la la-truck"></span>
-                                                            <span class="text">
-                                                                Bidding time left:
-                                                                <i class="normal">4 days 17:12:11</i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-truck"></span>
-                                                            <span class="text">
-                                                                Number of Offers:
-                                                                <i class="normal">4 offers</i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <button type="button" data-control="button"
-                                                                class="btn btn-custom waves-effect waves-float waves-light">
-                                                                View detail
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12">
+                                                <div class="schedule__item">
+                                                    <span class="schedule__label">
+                                                        Notes
+                                                    </span>
+                                                    <span class="schedule__value">
+                                                        The quote has a special discount is free carton cube
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="schedule__item">
+                                                    <span class="schedule__label">
+                                                        Bound the quote
+                                                    </span>
+                                                    <span class="schedule__value">
+                                                        Bound
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="schedule__item">
+                                                    <span class="schedule__label">
+                                                        Estimated price (Draft)
+                                                    </span>
+                                                    <span class="schedule__value active">
+                                                        $45,000
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Thanh's Apartment
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-1">
-                                                        <div class="child">
-                                                            <span class="number">4</span>
-                                                            <span class="text">Rooms</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="number">10.000</span>
-                                                            <span class="text">Libs</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="number">250</span>
-                                                            <span class="text">Items</span>
-                                                        </div>
+                                    <a href="#" class="btn_blue"  data-toggle="modal" data-target="#biddingQuote">Quote now</a>
+                                </div>
+                                
+                            </div>
+                            <div class="right container">
+                                <div class="heading">
+                                    Room listing
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="maket-place__item">
+                                            <div class="maket-place__head">
+                                                <span class="name">
+                                                    Luella’s apartment
+                                                </span>
+                                            </div>
+                                            <div class="maket-place__body">
+                                                <div class="utilities">
+                                                    <div class="utilities__item">
+                                                        <span class="utilities__value">16</span>
+                                                        <span class="utilities__label">Items</span>
                                                     </div>
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-2">
-                                                        <div class="child">
-                                                            <span class="icon la la-map-marker"></span>
-                                                            <span class="text">119 Pasteur, P6,Quan 3</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-map-marker"></span>
-                                                            <span class="text">119 Pasteur, P6,Quan 3</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-calendar"></span>
-                                                            <span class="text">28/05/2020</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-3">
-                                                        <div class="child">
-                                                            <span class="icon la la-truck"></span>
-                                                            <span class="text">
-                                                                Bidding time left:
-                                                                <i class="normal">4 days 17:12:11</i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-truck"></span>
-                                                            <span class="text">
-                                                                Number of Offers:
-                                                                <i class="normal">4 offers</i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <button type="button" data-control="button"
-                                                                class="btn btn-custom waves-effect waves-float waves-light">
-                                                                View detail
-                                                            </button>
-                                                        </div>
+                                                    <div class="utilities__item">
+                                                        <span class="utilities__value">542</span>
+                                                        <span class="utilities__label">lbs</span>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="maket-place__foot">
+                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail">Room detail</a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Thanh's Apartment
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="maket-place__item">
+                                            <div class="maket-place__head">
+                                                <span class="name">
+                                                    Luella’s apartment
+                                                </span>
+                                            </div>
+                                            <div class="maket-place__body">
+                                                <div class="utilities">
+                                                    <div class="utilities__item">
+                                                        <span class="utilities__value">16</span>
+                                                        <span class="utilities__label">Items</span>
+                                                    </div>
+                                                    <div class="utilities__item">
+                                                        <span class="utilities__value">542</span>
+                                                        <span class="utilities__label">lbs</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="maket-place__foot">
+                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail">Room detail</a>
+                                            </div>
                                         </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-1">
-                                                        <div class="child">
-                                                            <span class="number">4</span>
-                                                            <span class="text">Rooms</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="number">10.000</span>
-                                                            <span class="text">Libs</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="number">250</span>
-                                                            <span class="text">Items</span>
-                                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="maket-place__item">
+                                            <div class="maket-place__head">
+                                                <span class="name">
+                                                    Luella’s apartment
+                                                </span>
+                                            </div>
+                                            <div class="maket-place__body">
+                                                <div class="utilities">
+                                                    <div class="utilities__item">
+                                                        <span class="utilities__value">16</span>
+                                                        <span class="utilities__label">Items</span>
+                                                    </div>
+                                                    <div class="utilities__item">
+                                                        <span class="utilities__value">542</span>
+                                                        <span class="utilities__label">lbs</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-2">
-                                                        <div class="child">
-                                                            <span class="icon la la-map-marker"></span>
-                                                            <span class="text">119 Pasteur, P6,Quan 3</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-map-marker"></span>
-                                                            <span class="text">119 Pasteur, P6,Quan 3</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-calendar"></span>
-                                                            <span class="text">28/05/2020</span>
-                                                        </div>
+                                            </div>
+                                            <div class="maket-place__foot">
+                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail">Room detail</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="maket-place__item">
+                                            <div class="maket-place__head">
+                                                <span class="name">
+                                                    Luella’s apartment
+                                                </span>
+                                            </div>
+                                            <div class="maket-place__body">
+                                                <div class="utilities">
+                                                    <div class="utilities__item">
+                                                        <span class="utilities__value">16</span>
+                                                        <span class="utilities__label">Items</span>
+                                                    </div>
+                                                    <div class="utilities__item">
+                                                        <span class="utilities__value">542</span>
+                                                        <span class="utilities__label">lbs</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-3">
-                                                        <div class="child">
-                                                            <span class="icon la la-truck"></span>
-                                                            <span class="text">
-                                                                Bidding time left:
-                                                                <i class="normal">4 days 17:12:11</i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-truck"></span>
-                                                            <span class="text">
-                                                                Number of Offers:
-                                                                <i class="normal">4 offers</i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <button type="button" data-control="button"
-                                                                class="btn btn-custom waves-effect waves-float waves-light">
-                                                                View detail
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            </div>
+                                            <div class="maket-place__foot">
+                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail">Room detail</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="profile">
-                                <div class="maket-place__content">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Thanh's Apartment
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-1">
-                                                        <div class="child">
-                                                            <span class="number">4</span>
-                                                            <span class="text">Rooms</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="number">10.000</span>
-                                                            <span class="text">Libs</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="number">250</span>
-                                                            <span class="text">Items</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-2">
-                                                        <div class="child">
-                                                            <span class="icon la la-map-marker"></span>
-                                                            <span class="text">119 Pasteur, P6,Quan 3</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-map-marker"></span>
-                                                            <span class="text">119 Pasteur, P6,Quan 3</span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-calendar"></span>
-                                                            <span class="text">28/05/2020</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <div class="item item-3">
-                                                        <div class="child">
-                                                            <span class="icon la la-truck"></span>
-                                                            <span class="text">
-                                                                Bidding time left:
-                                                                <i class="normal">4 days 17:12:11</i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <span class="icon la la-truck"></span>
-                                                            <span class="text">
-                                                                Number of Offers:
-                                                                <i class="normal">4 offers</i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="child">
-                                                            <button type="button" data-control="button"
-                                                                class="btn btn-custom waves-effect waves-float waves-light">
-                                                                View detail
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade bidding-modal" id="biddingQuote">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Moving quotes</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            &times;
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label class="label">Bound the quote</label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Bound</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">Not Bound</label>
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <label class="label">Estimate price</label>
+                                            <input type="text" class="form-control" placeholder="Enter your price" value="450">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="label">Notes (Optional)</label>
+                                            <textarea type="text" class="form-control" placeholder="Enter your note"></textarea>
+                                        </div>
                                     </div>
+                                    <div class="modal-footer">
+                                        <a href="#" class="btn_grey">Save as draft</a>
+                                        <a href="#" class="btn_cancel" data-dismiss="modal">Cancel</a>
+                                        <a href="#" class="btn_blue">Send quote</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade bidding-modal" id="roomDetail">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Moving quotes</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            &times;
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label class="label">Bound the quote</label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Bound</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">Not Bound</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="label">Estimate price</label>
+                                            <input type="text" class="form-control" placeholder="Enter your price" value="450">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="label">Notes (Optional)</label>
+                                            <textarea type="text" class="form-control" placeholder="Enter your note"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#" class="btn_grey">Save as draft</a>
+                                        <a href="#" class="btn_cancel" data-dismiss="modal">Cancel</a>
+                                        <a href="#" class="btn_blue">Send quote</a>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
