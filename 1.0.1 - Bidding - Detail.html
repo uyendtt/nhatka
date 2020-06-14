@@ -53,7 +53,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://agoyu.com/themes/kosmo/assets/styles/libs/datatables-net/datatables.min.css">
     <link href="https://agoyu.com/assets/css/app.css" rel="stylesheet" type="text/css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./scss/main.css">
 </head>
@@ -268,7 +268,7 @@
                                                 </div>
                                             </div>
                                             <div class="maket-place__foot">
-                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail">Room detail</a>
+                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail" data-videoid="QL0OwReUBOo">Room detail</a>
                                             </div>
                                         </div>
                                     </div>
@@ -292,7 +292,7 @@
                                                 </div>
                                             </div>
                                             <div class="maket-place__foot">
-                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail">Room detail</a>
+                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail" data-videoid="QL0OwReUBOo">Room detail</a>
                                             </div>
                                         </div>
                                     </div>
@@ -316,7 +316,7 @@
                                                 </div>
                                             </div>
                                             <div class="maket-place__foot">
-                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail">Room detail</a>
+                                                <a href="#" class="link"  data-toggle="modal" data-target="#roomDetail" data-videoid="QL0OwReUBOo">Room detail</a>
                                             </div>
                                         </div>
                                     </div>
@@ -345,10 +345,13 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <button data-toggle="modal" data-target="#quoteSuccess">Quote Success</button>
+
                             </div>
 
-                            <!-- Modal -->
-                            <div class="modal fade bidding-modal" id="biddingQuote">
+                            <!-- Modal biddingQuote-->
+                            <div class="modal fade modal__bidding" id="biddingQuote">
                                 <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -387,43 +390,129 @@
                                 </div>
                             </div>
 
-                            <!-- Modal -->
-                            <div class="modal fade bidding-modal" id="roomDetail">
+                            <!-- Modal roomDetail-->
+                            <div class="modal fade modal__room-detail" id="roomDetail">
                                 <div class="modal-dialog" role="document">
                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Moving quotes</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            &times;
-                                        </button>
+                                    <div class="modal-header" style="background-image: url(https://img.youtube.com/vi/QL0OwReUBOo/maxresdefault.jpg);">
+                                        <div class="name">Living room</div>
+                                        <div class="btn_play">Play</div>
+                                        <div class="utilities">
+                                            <div class="utilities__item">
+                                                <span class="utilities__value">16</span>
+                                                <span class="utilities__label">Items</span>
+                                            </div>
+                                            <div class="utilities__item">
+                                                <span class="utilities__value">542</span>
+                                                <span class="utilities__label">lbs</span>
+                                            </div>
+                                        </div>
+                                        <iframe data-autoplay class="yt-player" src="https://www.youtube.com/embed/QL0OwReUBOo?autoplay=1&enablejsapi=1&controls=1&mute=1&loop=1&playsinline=1&color=white&rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="form-group">
-                                            <label class="label">Bound the quote</label>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                <label class="custom-control-label" for="customCheck1">Bound</label>
+                                        <div class="room-items">
+                                            <div class="room-items__wrap">
+                                                <div class="room-items__heading">Inventory list</div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                                        <div class="room-items__item">
+                                                            <figure class="img">
+                                                                <img src="https://via.placeholder.com/114x80" alt="">
+                                                                <span class="quantity">x1</span>
+                                                            </figure>
+                                                            <div class="name">Sofa 4 Cushions</div>
+                                                            <div class="number">170 lbs</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                                        <div class="room-items__item">
+                                                            <figure class="img">
+                                                                <img src="https://via.placeholder.com/114x80" alt="">
+                                                                <span class="quantity">x1</span>
+                                                            </figure>
+                                                            <div class="name">Sofa 4 Cushions</div>
+                                                            <div class="number">170 lbs</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                                        <div class="room-items__item">
+                                                            <figure class="img">
+                                                                <img src="https://via.placeholder.com/114x80" alt="">
+                                                                <span class="quantity">x1</span>
+                                                            </figure>
+                                                            <div class="name">Sofa 4 Cushions</div>
+                                                            <div class="number">170 lbs</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                                        <div class="room-items__item">
+                                                            <figure class="img">
+                                                                <img src="https://via.placeholder.com/114x80" alt="">
+                                                                <span class="quantity">x1</span>
+                                                            </figure>
+                                                            <div class="name">Sofa 4 Cushions</div>
+                                                            <div class="number">170 lbs</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                <label class="custom-control-label" for="customCheck2">Not Bound</label>
+                                            <div class="room-items__wrap">
+                                                <div class="room-items__heading">Customized list</div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                                        <div class="room-items__item">
+                                                            <figure class="img">
+                                                                <img src="https://via.placeholder.com/114x80" alt="">
+                                                                <span class="quantity">x1</span>
+                                                            </figure>
+                                                            <div class="name">Sofa 4 Cushions</div>
+                                                            <div class="number">170 lbs</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                                        <div class="room-items__item">
+                                                            <figure class="img">
+                                                                <img src="https://via.placeholder.com/114x80" alt="">
+                                                                <span class="quantity">x1</span>
+                                                            </figure>
+                                                            <div class="name">Sofa 4 Cushions</div>
+                                                            <div class="number">170 lbs</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="label">Estimate price</label>
-                                            <input type="text" class="form-control" placeholder="Enter your price" value="450">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="label">Notes (Optional)</label>
-                                            <textarea type="text" class="form-control" placeholder="Enter your note"></textarea>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn_grey">Save as draft</a>
-                                        <a href="#" class="btn_cancel" data-dismiss="modal">Cancel</a>
-                                        <a href="#" class="btn_blue">Send quote</a>
+                                        <a href="#" class="btn_cancel" data-dismiss="modal">Close</a>
                                     </div>
                                 </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal Success-->
+                            <div class="modal fade modal__quote-success" id="quoteSuccess">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                &times;
+                                            </button>
+                                            <figure class="img">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTwiLoXLZA1Zf8jdDPxAXwAjSoLogvJRXiRWsqIaE_TpB0QUGuF&usqp=CAU" alt="">
+                                            </figure>
+                                            <div class="heading">
+                                                Quote moving successfully!
+                                            </div>
+                                            <div class="sub">
+                                                You have quoted <b>Andy’s apartment</b> with the estimated price is <b>$45,000</b>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#" class="btn_blue">Return bidding board</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -907,6 +996,24 @@
     <script src="https://agoyu.com/themes/kosmo/libs/jquery-mask/jquery.mask.min.js"></script>
     <script src="https://agoyu.com/packages/theme/vendors/js/jquery.serializejson.min.js"></script>
     <script src="https://agoyu.com/assets/js/validation-helper.js"></script>
+
+    <script>
+        $('.maket-place__foot .link').on('click', function () {
+            $('#roomDetail').modal('show');
+
+            var id = $(this).data('videoid');
+            $('.yt-player').attr('src','https://www.youtube.com/embed/'+ id +'?autoplay=1&enablejsapi=1&controls=1&mute=1&loop=1&playsinline=1&color=white&rel=0&cc_load_policy=1');
+        })
+
+        $('.modal__room-detail .btn_play').click(function(){
+            $(this).closest('.modal').find('.yt-player').addClass('show');
+		})
+		$('.modal').on('hidden.bs.modal', function () {
+            $('.yt-player').attr('src','');
+            $('.yt-player').removeClass('show');
+        });
+    </script>
+
 </body>
 
 </html>

@@ -2,6 +2,10 @@ button {
   outline: none;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .maket-place__item {
   border-radius: 4px;
   border: 1px solid #e0e2e4;
@@ -290,7 +294,6 @@ button {
 }
 .bidding-detail .btn_blue {
   color: white;
-  font-family: OpenSans-SemiBold;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0px;
@@ -312,7 +315,6 @@ button {
 }
 .bidding-detail .right .heading {
   color: #242424;
-  font-family: OpenSans-SemiBold;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0px;
@@ -336,7 +338,6 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #242424;
-  font-family: OpenSans-SemiBold;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0px;
@@ -344,7 +345,6 @@ button {
 }
 .bidding-detail__info .name .date {
   color: #8896a1;
-  font-family: OpenSans-Regular;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0px;
@@ -387,7 +387,6 @@ button {
 }
 .bidding-detail__info .avatar .detail-name {
   color: #242424;
-  font-family: OpenSans-SemiBold;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0px;
@@ -403,7 +402,6 @@ button {
 .bidding-detail__info .avatar .addr-name {
   padding-left: 20px;
   color: #242424;
-  font-family: OpenSans-Regular;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0px;
@@ -413,7 +411,6 @@ button {
 }
 .bidding-detail__address .heading {
   color: #242424;
-  font-family: OpenSans-SemiBold;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0px;
@@ -431,13 +428,10 @@ button {
   margin-top: 30px;
 }
 
-.bidding-modal .modal-header {
-  padding: 22px 24px;
-}
-.bidding-modal .modal-body {
+.modal .modal-body {
   padding: 24px;
 }
-.bidding-modal .modal-dialog {
+.modal .modal-dialog {
   height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,104 +440,22 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
-.bidding-modal .modal-title {
-  color: #333333;
-  font-family: OpenSans-SemiBold;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0px;
-}
-.bidding-modal .modal-content {
-  border-radius: 4px;
-  border: 1px solid #e0e2e4;
-}
-.bidding-modal .label {
-  color: #93a0ab;
-  font-family: OpenSans-Regular;
-  font-size: 13px;
-  font-weight: normal;
-  letter-spacing: 0px;
-  margin-bottom: 5px;
-}
-.bidding-modal .custom-checkbox {
-  margin-bottom: 7px;
-}
-.bidding-modal .custom-control-label {
-  top: 0;
-  color: #3a3a3a;
-  font-family: OpenSans-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 0px;
-  margin-bottom: 0;
-}
-.bidding-modal .form-check-input {
-  background: #00a1e0;
-  border-radius: 4px;
-  height: 16px;
-  width: 16px;
-}
-.bidding-modal .form-group {
-  margin-bottom: 16px;
-}
-.bidding-modal .form-control {
+.modal .modal-content {
   background: white;
   border-radius: 4px;
-  border: 1px solid #e0e2e4;
-  min-height: 40px;
-  color: #242424;
-  padding-left: 12px;
-  padding-right: 12px;
+  overflow: hidden;
 }
-.bidding-modal .form-control::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #b9c1c8;
-  font-family: OpenSans-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 0px;
+.modal .modal-title {
+  font-family: "Open Sans", sans-serif;
 }
-.bidding-modal .form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #b9c1c8;
-  font-family: OpenSans-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 0px;
+.modal .close {
+  max-width: 13px;
 }
-.bidding-modal .form-control:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #b9c1c8;
-  font-family: OpenSans-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 0px;
+.modal .close img {
+  width: 100%;
 }
-.bidding-modal .form-control:-moz-placeholder {
-  /* Firefox 18- */
-  color: #b9c1c8;
-  font-family: OpenSans-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  letter-spacing: 0px;
-}
-.bidding-modal textarea {
-  resize: none;
-  height: 80px;
-}
-.bidding-modal .btn_cancel {
+.modal__bidding .btn_grey {
   color: #333333;
-  font-weight: 600;
-  background-color: transparent;
-  border: none;
-  margin-right: 20px;
-}
-.bidding-modal .btn_grey {
-  margin-right: auto;
-}
-.bidding-modal .btn_grey {
-  color: #333333;
-  font-family: OpenSans-SemiBold;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0px;
@@ -553,6 +465,394 @@ button {
   border-radius: 4px;
   padding: 10px;
 }
-.bidding-modal .btn_grey:hover {
+.modal__bidding .btn_grey:hover {
   opacity: 0.8;
+}
+.modal__bidding .modal-header {
+  padding: 22px 24px;
+}
+.modal__bidding .modal-body {
+  padding-top: 20px;
+}
+.modal__bidding .modal-title {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+.modal__bidding .label {
+  color: #93a0ab;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+}
+.modal__bidding .custom-checkbox {
+  margin-bottom: 7px;
+}
+.modal__bidding .custom-control-label {
+  top: 0;
+  color: #3a3a3a;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin-bottom: 0;
+}
+.modal__bidding .custom-control-label::before {
+  border-radius: 4px;
+  height: 16px;
+  width: 16px;
+  top: 3px;
+}
+.modal__bidding .custom-control-input {
+  background: #00a1e0;
+  border-radius: 4px;
+  height: 16px;
+  width: 16px;
+}
+.modal__bidding .custom-control-input:checked ~ .custom-control-label:before {
+  background: #00a1e0;
+  border-radius: 4px;
+  height: 16px;
+  width: 16px;
+}
+.modal__bidding .custom-control-input:checked ~ .custom-control-label::after {
+  top: 3px;
+  font-size: 0;
+  left: 0px;
+}
+.modal__bidding .form-group {
+  margin-bottom: 16px;
+}
+.modal__bidding .form-control {
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e0e2e4;
+  min-height: 40px;
+  color: #242424;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.modal__bidding .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #b9c1c8;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+.modal__bidding .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b9c1c8;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+.modal__bidding .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #b9c1c8;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+.modal__bidding .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b9c1c8;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+.modal__bidding textarea {
+  resize: none;
+  height: 80px;
+}
+.modal__bidding .btn_cancel {
+  color: #333333;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+}
+.modal__bidding .btn_grey {
+  margin-right: auto;
+}
+.modal__room-detail .utilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal__room-detail .utilities__item {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal__room-detail .utilities__value {
+  color: #242424;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.modal__room-detail .utilities__label {
+  color: #8896a1;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .modal__room-detail .modal-dialog {
+    max-width: 575px;
+    margin: 1.75rem auto;
+  }
+}
+.modal__room-detail .modal-footer {
+  padding: 30px 24px;
+}
+.modal__room-detail .modal-header {
+  padding: 24px;
+  height: 250px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  border-radius: 0;
+  border: none;
+}
+.modal__room-detail .modal-header::before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.modal__room-detail .modal-body {
+  max-height: 370px;
+  overflow-y: auto;
+  /*add a shadow to the scrollbar here*/
+  /*this is the little scrolly dealio in the bar*/
+  /*nobody needs this little scrollbar corner, I mean really, get rid of it haha*/
+}
+.modal__room-detail .modal-body::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.modal__room-detail .modal-body::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+.modal__room-detail .modal-body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #dbdbdb;
+  outline: 1px solid #dbdbdb;
+  height: 3px;
+}
+.modal__room-detail .modal-body::-webkit-scrollbar-corner {
+  display: none;
+  height: 0px;
+  width: 0px;
+}
+.modal__room-detail .yt-player {
+  opacity: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.modal__room-detail .yt-player.show {
+  opacity: 1;
+  z-index: 1;
+}
+.modal__room-detail .utilities {
+  z-index: 1;
+  position: absolute;
+  bottom: 15px;
+}
+.modal__room-detail .utilities__item {
+  min-width: 100px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.modal__room-detail .utilities__value {
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+}
+.modal__room-detail .utilities__label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+.modal__room-detail .name {
+  z-index: 1;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+.modal__room-detail .btn_play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+.modal__room-detail .btn_cancel {
+  color: #333333;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+}
+@media (min-width: 576px) {
+  .modal__quote-success .modal-dialog {
+    max-width: 400px;
+    margin: 1.75rem auto;
+  }
+}
+.modal__quote-success .modal-body {
+  padding: 30px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal__quote-success .heading {
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.modal__quote-success .sub {
+  color: #242424;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.modal__quote-success .sub b {
+  color: #242424;
+  font-weight: bold;
+}
+.modal__quote-success .img {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 54px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.modal__quote-success .img img {
+  width: 100%;
+}
+.modal__quote-success .btn_blue {
+  display: inline-block;
+  margin-top: 20px;
+}
+.modal .room-items__wrap:not(:last-child) {
+  margin-bottom: 20px;
+}
+.modal .room-items__heading {
+  color: #282828;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+}
+.modal .room-items__item .img {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  max-height: 75px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal .room-items__item .img img {
+  width: 100%;
+}
+.modal .room-items__item .quantity {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 20px;
+  background: #b9c1c8;
+  border-radius: 4px 12px 0 0;
+  border: 2px solid white;
+  padding: 3px 8px 4px 8px;
+  margin-left: -2px;
+  margin-bottom: -2px;
+}
+.modal .room-items__item .name {
+  color: #343434;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin-bottom: 4px;
+}
+.modal .room-items__item .number {
+  color: #343434;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 20px;
 }
